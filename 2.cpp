@@ -1,0 +1,125 @@
+#include<stdio.h>
+#include<math.h>
+#include<windows.h>
+int right=0;
+int wrong=0;
+void add()
+{
+ int a,b,c;
+ a=rand()%100;
+ b=rand()%100;
+ printf("请回答：\n\t\t %d + %d = ",a,b);
+ scanf("%d",&c);
+ if(a+b==c)
+ {
+  printf("回答正确!\n");
+  right++;
+ }
+ else
+ {
+  printf("回答错误!\n");
+  wrong++;
+ }
+}
+void minu()
+{
+ int a,b,c;
+ a=rand()%100;
+ b=rand()%100;
+ printf("请回答：\n\t\t %d - %d = ",a,b);
+ scanf("%d",&c);
+ if(a-b==c)
+ {
+  printf("回答正确!\n");
+  right++;
+ }
+ else
+ {
+  printf("回答错误!\n");
+  wrong++;
+ }
+}
+void mul()
+{
+ int a,b,c;
+ a=rand()%100;
+ b=rand()%100;
+ printf("请回答：\n\t\t %d * %d = ",a,b);
+ scanf("%d",&c);
+ if(a*b==c)
+ {
+  printf("回答正确!\n");
+  right++;
+ }
+ else
+ {
+  printf("回答错误!\n");
+  wrong++;
+ }
+}
+void di()
+{
+ int a,b,c;
+ a=rand()%100;
+ b=rand()%100;
+ printf("请回答：\n\t\t %d / %d = ",a,b);
+ scanf("%d",&c);
+ if(a/b==c)
+ {
+  printf("回答正确!\n");
+  right++;
+ }
+ else
+ {
+  printf("回答错误!\n");
+  wrong++;
+ }
+}
+void main()
+{
+ int choise;
+ int con=0;
+ printf("\n\t\t\t欢迎进入小学简易四则运算\n\n");
+ while(1)
+ {
+
+  printf("\t\t\t  1.加法运算\n");
+  printf("\t\t\t  2.减法运算\n");
+  printf("\t\t\t  3.乘法运算\n");
+  printf("\t\t\t  4.除法运算\n");
+  printf("\t\t\t  5.退出运算\n");
+  printf("请选择：\n");
+  if(con==0)
+   scanf("%d",&choise);
+  switch(choise)
+  {
+  case 1:
+   add();
+   break;
+  case 2:
+   minu();
+   break;
+  case 3:
+   mul();
+   break;
+  case 4:
+   di();
+   break;
+  case 5:
+   return;
+  }
+  printf("\n\t\t\t1.继续运算\n");
+  printf("\n\t\t\t2.重新选择\n");
+  printf("\n\t\t\t3.退出运算\n");
+  scanf("%d",&con);
+  if(con==1)
+   con=1;
+  else if(con==2)
+   con=0;
+  else if(con==3)
+   break;
+  else
+   printf("抱歉!，你输入的指令有误!请重新输入!\n");
+ }
+ printf("您总共完成了 %d 道题\n正确 %d 道\n错误 %d 道\n",right+wrong,right,wrong);
+}
