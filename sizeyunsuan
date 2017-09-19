@@ -8,16 +8,16 @@ void add()
  int a,b,c;
  a=rand()%100;
  b=rand()%100;
- printf("Çë»Ø´ğ£º\n\t\t %d + %d = ",a,b);
+ printf("è¯·å›ç­”ï¼š\n\t\t %d + %d = ",a,b);
  scanf("%d",&c);
  if(a+b==c)
  {
-  printf("»Ø´ğÕıÈ·!\n");
+  printf("å›ç­”æ­£ç¡®!\n");
   right++;
  }
  else
  {
-  printf("»Ø´ğ´íÎó!\n");
+  printf("å›ç­”é”™è¯¯!\n");
   wrong++;
  }
 }
@@ -26,16 +26,16 @@ void minu()
  int a,b,c;
  a=rand()%100;
  b=rand()%100;
- printf("Çë»Ø´ğ£º\n\t\t %d - %d = ",a,b);
+ printf("è¯·å›ç­”ï¼š\n\t\t %d - %d = ",a,b);
  scanf("%d",&c);
  if(a-b==c)
  {
-  printf("»Ø´ğÕıÈ·!\n");
+  printf("å›ç­”æ­£ç¡®!\n");
   right++;
  }
  else
  {
-  printf("»Ø´ğ´íÎó!\n");
+  printf("å›ç­”é”™è¯¯!\n");
   wrong++;
  }
 }
@@ -44,16 +44,16 @@ void mul()
  int a,b,c;
  a=rand()%100;
  b=rand()%100;
- printf("Çë»Ø´ğ£º\n\t\t %d * %d = ",a,b);
+ printf("è¯·å›ç­”ï¼š\n\t\t %d * %d = ",a,b);
  scanf("%d",&c);
  if(a*b==c)
  {
-  printf("»Ø´ğÕıÈ·!\n");
+  printf("å›ç­”æ­£ç¡®!\n");
   right++;
  }
  else
  {
-  printf("»Ø´ğ´íÎó!\n");
+  printf("å›ç­”é”™è¯¯!\n");
   wrong++;
  }
 }
@@ -62,16 +62,16 @@ void di()
  int a,b,c;
  a=rand()%100;
  b=rand()%100;
- printf("Çë»Ø´ğ£º\n\t\t %d / %d = ",a,b);
+ printf("è¯·å›ç­”ï¼š\n\t\t %d / %d = ",a,b);
  scanf("%d",&c);
  if(a/b==c)
  {
-  printf("»Ø´ğÕıÈ·!\n");
+  printf("å›ç­”æ­£ç¡®!\n");
   right++;
  }
  else
  {
-  printf("»Ø´ğ´íÎó!\n");
+  printf("å›ç­”é”™è¯¯!\n");
   wrong++;
  }
 }
@@ -79,16 +79,16 @@ void main()
 {
  int choise;
  int con=0;
- printf("\n\t\t\t»¶Ó­½øÈëĞ¡Ñ§¼òÒ×ËÄÔòÔËËã\n\n");
+ printf("\n\t\t\tæ¬¢è¿è¿›å…¥å°å­¦ç®€æ˜“å››åˆ™è¿ç®—\n\n");
  while(1)
  {
 
-  printf("\t\t\t  1.¼Ó·¨ÔËËã\n");
-  printf("\t\t\t  2.¼õ·¨ÔËËã\n");
-  printf("\t\t\t  3.³Ë·¨ÔËËã\n");
-  printf("\t\t\t  4.³ı·¨ÔËËã\n");
-  printf("\t\t\t  5.ÍË³öÔËËã\n");
-  printf("ÇëÑ¡Ôñ£º\n");
+  printf("\t\t\t  1.åŠ æ³•è¿ç®—\n");
+  printf("\t\t\t  2.å‡æ³•è¿ç®—\n");
+  printf("\t\t\t  3.ä¹˜æ³•è¿ç®—\n");
+  printf("\t\t\t  4.é™¤æ³•è¿ç®—\n");
+  printf("\t\t\t  5.é€€å‡ºè¿ç®—\n");
+  printf("è¯·é€‰æ‹©ï¼š\n");
   if(con==0)
    scanf("%d",&choise);
   switch(choise)
@@ -108,9 +108,9 @@ void main()
   case 5:
    return;
   }
-  printf("\n\t\t\t1.¼ÌĞøÔËËã\n");
-  printf("\n\t\t\t2.ÖØĞÂÑ¡Ôñ\n");
-  printf("\n\t\t\t3.ÍË³öÔËËã\n");
+  printf("\n\t\t\t1.ç»§ç»­è¿ç®—\n");
+  printf("\n\t\t\t2.é‡æ–°é€‰æ‹©\n");
+  printf("\n\t\t\t3.é€€å‡ºè¿ç®—\n");
   scanf("%d",&con);
   if(con==1)
    con=1;
@@ -119,7 +119,7 @@ void main()
   else if(con==3)
    break;
   else
-   printf("±§Ç¸!£¬ÄãÊäÈëµÄÖ¸ÁîÓĞÎó!ÇëÖØĞÂÊäÈë!\n");
+   printf("æŠ±æ­‰!ï¼Œä½ è¾“å…¥çš„æŒ‡ä»¤æœ‰è¯¯!è¯·é‡æ–°è¾“å…¥!\n");
  }
- printf("Äú×Ü¹²Íê³ÉÁË %d µÀÌâ\nÕıÈ· %d µÀ\n´íÎó %d µÀ\n",right+wrong,right,wrong);
+ printf("æ‚¨æ€»å…±å®Œæˆäº† %d é“é¢˜\næ­£ç¡® %d é“\né”™è¯¯ %d é“\n",right+wrong,right,wrong);
 }
